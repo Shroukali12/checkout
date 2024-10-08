@@ -1,0 +1,298 @@
+
+.navbar-nav .nav-link.active,
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 10px;
+    margin-right: 15px;
+}
+
+.nav-link::after {
+    content: " ";
+    width: 0;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 75%;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+.navLogin {
+    width: 13%;
+}
+
+.shopping-bag-numbers {
+    width: 20px;
+    height: 20px;
+    background-color: #E79C96;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+
+/* body */
+
+.checkout-container {
+    margin: 50px 0px;
+}
+
+.checkout-container h1 {
+    color: #484F56;
+    font-weight: 600;
+}
+
+.checkout-header {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.checkout-step {
+    width: 600px;
+}
+
+.checkout-step h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.checkout-step p {
+    font-size: 10px;
+    color: #777;
+    font-weight: 100;
+}
+
+.checkout-progress {
+    height: 4px;
+    background-color: #f2f2f2;
+    margin-bottom: 30px;
+    width: 1410px;
+}
+
+.checkout-progress-bar {
+    height: 100%;
+    background-color: #ADB5BD;
+    width: 65%;
+}
+
+.returning-customer {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 5px;
+    font-weight: 100;
+    height: 95px;
+}
+
+.card-body h6 {
+    font-weight: 100;
+}
+
+.card-body input {
+    width: 1245px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.coupon{
+    margin-top: 20px;
+}
+
+/* form */
+
+
+
+.billing-form {
+    width: 650px;
+    color: #484F56;
+}
+
+ h6 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: #6D757E;
+    
+}
+.form-group span{
+    color: red;
+}
+
+form input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.additional-information label,
+p {
+    color: #6D757E;
+    font-weight: 600;
+}
+
+.additional-information {
+    margin-top: 50px;
+}
+
+.additional-information h4 {
+    margin: 40px 0px;
+}
+
+.additional-information textarea {
+    width: 650px;
+}
+:focus::placeholder {
+    color: transparent;
+  }
+.your-order{
+    padding-left: 60px;
+}
+.product-name img{
+    width: 70px;
+    height: 85px;
+}
+.cart-items td{
+    width: 400px;
+    
+}
+.your-order table{
+background-color:#333 !important;
+}
+/* footer */
+
+footer {
+    background-color: #f8f8f8;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 70px 0;
+}
+
+.footer-section {
+    margin: 0 20px;
+}
+
+.footer-section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin-right: 10px;
+    color: #555;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.footer-img {
+    width: 80px;
+    height: 50px;
+}
+
+.footer-line {
+    background-color: #eaeaea;
+    width: 80%;
+    height: 20px;
+    margin: 30px auto;
+    margin-bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 10px;
+    padding: 30px 0;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #777;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.payment-icons img {
+    height: 30px;
+    width: auto;
+}
+
+@media (max-width: 767px) {
+    footer {
+        text-align: center;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .payment-icons {
+        flex-wrap: wrap;
+    }
+    .footer-content p {
+        margin-bottom: 15px;
+    }
+}
