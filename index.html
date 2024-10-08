@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body><div class="container">
+    <div id="hero-page container">
+      <div class="hero-navbar">
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container">
+            <a class="navbar-brand" href="#hero-page"
+              ><img src="assests/logo-blue-2.svg" alt="Logo" class="mx-3"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#Sofas"
+                    >Sofas</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Chairs">Chairs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Tables">Tables</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Beds">Beds</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Storage">Storage</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Lighting">Lighting</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="navLogin mt-3">
+              <ul
+                class="d-flex justify-content-evenly align-content-center list-unstyled"
+              >
+                <li
+                  class="d-flex justify-content-around align-items-center w-25"
+                >
+                  <i class="fa-solid fa-bag-shopping fs-4"></i>
+                  <span class="shopping-bag-numbers text-white">0</span>
+                </li>
+                <li><i class="fa-regular fa-user fs-5"></i></li>
+                <li>SALE</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- body -->
+    <div class="checkout-container">
+      <h1>Checkout</h1>
+      
+      <div class="container checkout-header">
+        
+        <div class="checkout-step  ">
+          <h3>
+            <i class="fa-regular fa-square-check" style="font-weight: 100"></i>
+            SHOPPING BAG
+          </h3>
+          <p>VIEW YOUR ITEMS</p>
+        </div>
+        <div class="checkout-step ">
+          <h3>
+            <i class="fa-regular fa-square-check"></i>SHIPPING AND CHECKOUT
+          </h3>
+          <p>ENTER YOUR DETAILS</p>
+        </div>
+        <div class="checkout-step " style="color: #71757a">
+          <h3>CONFIRMATION</h3>
+          <p>REVIEW YOUR ORDER!</p>
+        </div>
+      
+      </div>
+
+      <div class="checkout-progress">
+        <div class="checkout-progress-bar"></div>
+      </div>
+
+      <div class="returning-customer">
+        <i class="fa-regular fa-window-maximize"></i> Returning customer? Click
+        here to login
+      </div>
+      <div class="coupon">
+        <p class="d-inline-flex gap-1">
+          Have a coupon?
+          <a
+            class=""
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            style="color: #71757a"
+          >
+            Click here to enter your code
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card-body">
+            <h6>If you have a coupon code, please apply it below.</h6>
+            <input
+              type="text"
+              id="copoun"
+              name="copoun"
+              placeholder="Coupon code"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- form -->
+    <div class="form container">
+      <div class="row">
+        <div class="col billing-form">
+          <h6>BILLING DETAILS</h6>
+          <form>
+            <div class="name">
+              <div class="form-group">
+                <label for="first-name">First Name<span>*</span></label>
+                <input type="text" id="first-name" name="first-name" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name<span>*</span></label>
+                <input type="text" id="last-name" name="last-name" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="company-name">Company Name (Optional)</label>
+              <input type="text" id="company-name" name="company-name" />
+            </div>
+            <div class="form-group">
+              <label for="country">Country/Region<span>*</span></label>
+              <select id="country" name="country" required>
+                <option value="United   Kingdom (UK)">
+                  United Kingdom (UK)
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="street-address">Street Address<span>*</span></label>
+              <input
+                type="text"
+                id="street-address"
+                name="street-address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="apartment"
+                >Apartment, suite, unit, etc. (optional)</label
+              >
+              <input type="text" id="apartment" name="apartment" />
+            </div>
+            <div class="form-group">
+              <label for="town-city">Town/City<span>*</span></label>
+              <input type="text" id="town-city" name="town-city" required />
+            </div>
+            <div class="form-group">
+              <label for="county">County (Optional)</label>
+              <input type="text" id="county" name="county" />
+            </div>
+            <div class="form-group">
+              <label for="postcode">Postcode<span>*</span></label>
+              <input type="text" id="postcode" name="postcode" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone<span>*</span></label>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address<span>*</span></label>
+              <input type="text" id="email" name="email" required />
+            </div>
+          </form>
+          <div class="additional-information">
+            <label>
+              <input type="checkbox" />
+              Create an account?
+            </label>
+
+            <h4>Additional information</h4>
+            <label for="order-notes" style="font-size: small"
+              >ORDER NOTES(OPTIONAL)</label
+            >
+            <textarea
+              id="order-notes"
+              placeholder="Notes about your order, e.g. special notes for delivery."
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="col your-order">
+          <h6>YOUR ORDER</h6>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">PRODUCT</th>
+                <th scope="col">SUBTOTAL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="cart-items">
+                <td class="product-name">
+                  <div class="img">
+                    <img
+                      src="https://demos.reytheme.com/beijing/wp-content/uploads/sites/7/2019/06/21.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="caption">
+                    <p>Lucien Wide Chest of Drawers</p>
+                    <h5>x1</h5>
+                  </div>
+                </td>
+                <td>
+                  <p>299</p>
+                </td>
+              </tr>
+              <tr class="cart-items">
+                <td class="product-name">
+                  <div class="img">
+                    <img
+                      src="https://demos.reytheme.com/beijing/wp-content/uploads/sites/7/2019/06/19-768x538.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="caption">
+                    <p>java Shade Small, Natural Rattan</p>
+                    <h5>x1</h5>
+                  </div>
+                </td>
+                <td>
+                  <p>299</p>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="cart-subtotal">
+                <th>SUBTOTAL</th>
+                <td></td>
+              </tr>
+              <tr class="order-total">
+                <th>TOTAL</th>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+      <!-- footer -->
+      <footer>
+        <div class="footer-container container">
+          <div class="footer-section contact-info">
+            <img src="assests/logo-blue-2.svg" alt="" class="footer-img" />
+            <p>17 Irving Pl, New York, NY 10003</p>
+            <div class="social-media">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <p>Yes, we ship to Egypt!</p>
+            </div>
+          </div>
+          <div class="footer-section">
+            <p>care@reytheme.com</p>
+            <p>776 566 999</p>
+          </div>
+          <div class="footer-section">
+            <h4>SHOP</h4>
+            <ul>
+              <li><a href="#">Beds</a></li>
+              <li><a href="#">Chairs</a></li>
+              <li><a href="#">Lighting</a></li>
+              <li><a href="#">Sofas</a></li>
+              <li><a href="#">Storage</a></li>
+              <li><a href="#">Tables</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>HELP</h4>
+            <ul>
+              <li><a href="#">Frequently Asked Questions</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>ABOUT</h4>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Journal</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">My account</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-content">
+          <p>© rey theme, 2024. All rights reserved.</p>
+          <div class="payment-icons">
+            <img
+              src="assests/Screenshot 2024-10-01 145905.png"
+              alt="AmericanExpress"
+            />
+            <img
+              src="assests/Screenshot 2024-10-01 150344.png"
+              alt="ApplePay"
+            />
+            <img
+              src="assests/Screenshot 2024-10-01 160535.png"
+              alt="Googlepay"
+            />
+            <img
+              src="assests/Screenshot 2024-10-01 160621.png"
+              alt="MasterCard"
+            />
+            <img src="assests/Screenshot 2024-10-01 160631.png" alt="PayPal" />
+            <img src="assests/Screenshot 2024-10-01 160637.png" alt="Visa" />
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
